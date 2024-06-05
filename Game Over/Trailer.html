@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./script.js" defer></script>
+  <script src="scriptmov.js" defer></script>
+  <style>
+    body {
+      height: 100vh;
+      background-image: url(assets/imagens/fundo1.jpeg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: aliceblue;
+      text-align: center;
+    }
+
+    .nav-btn {
+      border-radius: 5px;
+      padding: 5px;
+      border: 0;
+    }
+
+    .selected {
+      background-color: #ac0000;
+
+    }
+  </style>
+  <title>Trailer</title>
+</head>
+
+<body>
+  <a href="index.html">
+    <button class="nav-btn" style="width: 80px; height: 50px; font-size: 20px;">Voltar</button></a>
+  <div class="card">
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <h1>Trailer The Last Of Us</h1>
+    <div class="container">
+      <iframe width="90%" height="90%" src="https://www.youtube.com/embed/kE7li_u1nmg?si=WAK-ZeaTLe_MobuW"
+        title="YouTube video player" frameborder="0" class="nav-btn"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>

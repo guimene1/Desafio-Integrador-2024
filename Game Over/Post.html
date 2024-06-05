@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="assets/css/estilo.css" />
+    <script src="scriptmov.js" defer></script>
+    <link rel="icon" href="assets/imagens/iconi.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .bloco {
+            background-color: rgb(12, 11, 11);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .bloco img.perfil {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bloco p {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .nav-btn {
+            color: rgb(12, 11, 11);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background-color: #ac0000;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 5px;
+            color: rgb(12, 11, 11);
+        }
+
+        .custom-file-upload:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <div class="container">
+
+        <div class="bloco">
+            <a href="Feed.html">
+                <button class="nav-btn">Voltar</button>
+            </a>
+        </div>
+
+        <div class="bloco">
+            <p>Legenda:</p>
+            <input class="nav-btn" type="text">
+            <p>Jogo:</p>
+            <input class="nav-btn" type="text">
+            <p>Imagem:</p>
+            <label for="file-upload" class="custom-file-upload">Escolher arquivo</label>
+            <input id="file-upload" type="file" />
+            <button class="nav-btn">Postar</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

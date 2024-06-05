@@ -1,0 +1,116 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url(../imagens/fundo1.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: min-content;
+}
+
+.menu a {
+    display: block;
+    font-family: 'league gothic';
+    font-size: 5vmin;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: .5rem 0;
+    transform: scale(.95);
+
+    transition: scale 550ms linear, opacity 250ms linear;
+}
+
+.menu a:hover,
+.menu a:active {
+    color: #f80909;
+}
+.nav-btn{
+    border-radius: 5px;
+    padding: 5px;
+    border: 0;
+}
+.nav-btn:hover{
+    background-color: #ac0000;
+}
+.selected {
+    background-color: #ac0000;
+
+}
+
+.menu a:first-of-type {
+    transform: scale(1);
+
+}
+
+.menu a:not(:hover) {
+    transform: scale(.95);
+}
+
+@media (max-width: 575.98px) {
+    .btn-custom {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+    container{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 200px;
+        height: 100px;
+    }
+    p{
+        font-size: 80%;
+    }
+    .nav-btn{
+        height: 50%;
+        width: 50%;
+        font-size: 80%;
+        margin: 10px;
+    }
+    .card2{
+        display: none;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+}

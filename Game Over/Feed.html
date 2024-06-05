@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css" />
+    <title>Feed</title>
+    <link rel="icon" href="assets/imagens/iconi.png">
+    <script src="scriptmov.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .bloco {
+            background-color: rgb(12, 11, 11);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .bloco img.perfil {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; 
+            margin-right: 10px;
+        }
+
+        .bloco p {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .nav-btn {
+            color: rgb(12, 11, 11);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background-color: #ac0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <div class="container">
+
+        <div class="bloco">
+            <a href="index.html">
+                <button class="nav-btn">Voltar</button>
+            </a>
+            <a href="Post.html">
+                <button class="nav-btn">Postar</button>
+            </a>
+        </div>
+        <div class="bloco">
+            <img src="assets/imagens/calvato.jpg" alt="Calvato25" class="perfil">
+            <p>Calvato25</p>
+            <p>Não curti, faltou dificuldade.</p>
+            <p>Jogo: Elden Ring</p>
+            <img src="assets/imagens/malen.jpg" alt="Malenia Elden Ring" width="100%">
+            <p>42 curtidas</p>
+            <button class="nav-btn">👍</button>
+        </div>
+        <div class="bloco">
+            <img src="assets/imagens/elmo.jpg" alt="MoradorSemTeto" class="perfil">
+            <p>MoradorSemTeto</p>
+            <p>Melhor que o 2.</p>
+            <p>Jogo: The Last Of Us</p>
+            <img src="assets/imagens/lastofus.jpg" alt="The Last Of Us" width="100%">
+            <p>78 curtidas</p>
+            <button class="nav-btn">👍</button>
+        </div>
+        <div class="bloco">
+            <img src="assets/imagens/cap.jpg" alt="Capivara" class="perfil">
+            <p>Capivara</p>
+            <p>Não gosto desses caras.</p>
+            <p>Jogo: Darks Souls Remastered</p>
+            <img src="assets/imagens/armaduras.jpg" alt="Dark Souls 1" width="100%">
+            <p>50 curtidas</p>
+            <button class="nav-btn">👍</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
